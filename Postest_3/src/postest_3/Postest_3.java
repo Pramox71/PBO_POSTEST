@@ -30,10 +30,11 @@ public class Postest_3 {
                     while (true){
                         System.out.println("===========================");
                         System.out.println("====== Lihat Senjata ======");
-                        System.out.println("| 1. Lihat Data SMG       |");
-                        System.out.println("| 2. Lihat Data AR        |");
+                        System.out.println("| 1. Lihat Data AR       |");
+                        System.out.println("| 2. Lihat Data SMG        |");
                         System.out.println("| 3. Exit                 |");
                         System.out.println("===========================");
+                        System.out.print("\nMasukkan Pilihan Anda >> ");
                         pilih = cek_int();
                         if (pilih == 1){
                             Read_Data(1);
@@ -51,10 +52,11 @@ public class Postest_3 {
                     while (true){
                         System.out.println("============================");
                         System.out.println("====== Update Senjata ======");
-                        System.out.println("| 1. Update Data SMG       |");
-                        System.out.println("| 2. Update Data AR        |");
+                        System.out.println("| 1. Update Data AR       |");
+                        System.out.println("| 2. Update Data SMG        |");
                         System.out.println("| 3. Exit                  |");
                         System.out.println("============================");
+                        System.out.print("\nMasukkan Pilihan Anda >> ");
                         pilih = cek_int();
                         if (pilih == 1){
                             Update_Data(1);
@@ -72,10 +74,11 @@ public class Postest_3 {
                     while (true){
                         System.out.println("============================");
                         System.out.println("====== Delete Senjata ======");
-                        System.out.println("| 1. Delete Data SMG       |");
-                        System.out.println("| 2. Delete Data AR        |");
+                        System.out.println("| 1. Delete Data AR       |");
+                        System.out.println("| 2. Delete Data SMG        |");
                         System.out.println("| 3. Exit                  |");
                         System.out.println("============================");
+                        System.out.print("\nMasukkan Pilihan Anda >> ");
                         pilih = cek_int();
                         if (pilih == 1){
                             delete_data(1);
@@ -232,7 +235,7 @@ public class Postest_3 {
             }
             for(int i = 0; i < Banyak_Data; i++){
                 System.out.printf("|%-4s", i+1);
-                System.out.printf("|%-21s|%-23s|%-10s|%-8s|", Data_AR.get(i).getNama_Senjata(), Data_AR.get(i).getJenis(), Data_AR.get(i).getKode(), Data_AR.get(i).getStok());
+                System.out.printf("|%-21s|%-23s|%-10s|%-8s|", Data_SMG.get(i).getNama_Senjata(), Data_SMG.get(i).getJenis(), Data_SMG.get(i).getKode(), Data_SMG.get(i).getStok());
                 System.out.printf("\n");
             }
         }        
